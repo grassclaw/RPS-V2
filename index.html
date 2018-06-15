@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors</title>
+    <!-- For media queries in Bootstrap. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to the jQuery Library -->
+    <script src="https://code.jquery.com/jquery-2.2.3.js"></script>
+    <!-- Bootswatch CDN link -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/darkly/bootstrap.min.css" rel="stylesheet">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!-- Personal stylesheet -->
+    <link rel="stylesheet" href="assets/style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/Icon.png">
+ </head>
+
+<body class="center-block">
+<div class="bkg">
+
+        <div class="container-fluid container-head">
+            <div class="row row-head">
+                <div class="col col-xs-2 col-title-pic">
+                    <img class="title-pic" src="img/rock-small.jpg" alt="soviet-style raised fist in red" />
+                </div><!-- / col-title-pic -->
+    
+                <div class="col col-xs-10 col-title">
+                    <h1>Rock Paper Scissors</h1>
+                </div><!-- / col-title -->
+    
+            </div><!-- /row-head -->
+        </div><!-- /div container-head -->
+    
+        <div class="container container-start">
+            <div class="row row-start">
+                <div class="col col-xs-12 col-start">
+                    <span>Play</span>
+                    <br />
+                        <input type="text" id="name-input" value="Name" />
+                        <input type="button" id="name-submit" value="Start" />
+                </div><!-- / col-start -->
+            </div><!-- / row-start -->
+            <div class="row row-message">
+                <div class="col col-xs-12 col-message">
+                </div><!-- / col-message -->
+            </div><!-- / row-message -->
+        </div><!-- / container-start -->
+    
+        <div class="container container-play">
+            <div class="row row-score">
+                <div class="col col-xs-4 col-score col-win">
+                    <span></span>
+                </div><!-- end col-score -->
+                <div class="col col-xs-4 col-score col-tie">
+                    <span></span>
+                </div><!-- end col-score -->
+                <div class="col col-xs-4 col-score col-lose">
+                    <span></span>
+                </div><!-- end col-score -->
+            </div><!-- end row-score -->
+            <div class="row row-play-choice">
+                <div class="col col-xs-4 col-play-rock col-play-pic">
+                    <img src="img/rock-small.jpg" alt="rock: soviet-style raised fist in red" data-move="rock" />
+                    <br />
+                    <span>Rock</span>
+                </div><!-- / col-play-rock -->
+    
+                <div class="col col-xs-4 col-play-paper col-play-pic">
+                    <img src="img/paper-small.jpg" alt="paper: soviet-style raised open hand in red" data-move="paper" />
+                    <br />
+                    <span>Paper</span>
+                </div><!-- / col-play-paper -->
+    
+                <div class="col col-xs-4 col-play-scissors col-play-pic">
+                    <img src="img/scissors-small.jpg" alt="scissors: soviet-style two fingers raised in red" data-move="scissors" />
+                    <br />
+                    <span>Scissors</span>
+                </div><!-- / col-play-scissors -->
+            </div><!-- / row-play-choice -->
+    
+            <div class="row row-play-battle">
+                <div class="col col-xs-6 col-my-play">
+                    <div class="pic-my-play">
+                    </div><!-- /pic-opponent-play div -->
+                    <div class="my-move-caption">
+                    </div><!-- /opponent-move-caption div -->
+                </div><!-- / col-my-play -->
+    
+                <div class="col col-xs-6 col-opponent-play">
+                    <div class="pic-opponent-play">
+                    </div><!-- /pic-opponent-play div -->
+                    <div class="opponent-move-caption">
+                    </div><!-- /opponent-move-caption div -->
+                </div><!-- / col-opponent-play -->
+            </div><!-- / row-play-battle -->
+            <div class="row row-reckoning">
+                <div class="col col-xs-12 col-reckoning">
+                    <div class="outcome-message">
+                    </div><!-- / outcome-message -->
+                    <div class="winning-pic">
+                    </div><!-- / winning-img -->
+                </div><!-- / col-reckoning -->
+            </div><!-- / row-reckoning -->
+    
+        </div><!-- / container-play -->
+    
+    
+    
+    
+    </div><!-- / bkg div -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+   <!-- Firebase script -->
+   <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+   <script type="text/javascript" src="assets/logic.js"></script>

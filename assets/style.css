@@ -1,0 +1,198 @@
+
+/* font-family: 'Anton', sans-serif; /* titles */
+/* font-family: 'Roboto Mono', monospace; /* text */ 
+
+/* rgba(132, 11, 42, 1); /* egglant */
+/* rgba(210, 18, 67, 1); /* pink */
+/* rgba(252, 176, 64, 1);  /* yellow */
+/* rgba(239, 65, 54, 1); /* red */
+/* rgba(245, 124, 116, 1); /* salmon */
+
+/* text-shadow: 
+		-4px -4px 0 rgba(0, 0, 0, 1),
+		 4px -4px 0 rgba(0, 0, 0, 1),
+		-4px  4px 0 rgba(0, 0, 0, 1),
+		 4px  4px 0 rgba(0, 0, 0, 1); */
+
+         body {
+            background-color: rgba(210, 18, 67, 1); /* pink */
+            font-family: 'Anton', sans-serif; /* titles */
+            font-size: 2em;
+        }
+        span {
+            font-size: 2em;
+        }
+        .bkg {
+            background-image: url('../img/star.png');
+            background-position: center;
+            background-size: cover;
+            width: 100vw;
+            min-height: 100vh;
+            height: auto;
+            overflow: hidden;
+        }
+        .container-head {
+            background-color: rgba(132, 11, 42, 1); /* egglant */
+            padding: 1.5em;
+            position: relative;
+            top: 2em;
+        }
+        .row-head {
+        }
+        .col-title-pic {
+            width: auto;
+            padding-right: 2em;
+        }
+        .title-pic {
+            width: 150px;
+            height: auto;
+        }
+        .col-title {
+            color: rgba(252, 176, 64, 1);  /* yellow */
+            padding: calc((150px - 4em)/2) 0 0 0;
+            margin: 0;
+            width: calc(100% - 150px - 4em);
+        }
+        .col-title h1 {
+            font-size: 4em;
+            padding: 0;
+            margin: 0;
+            font-family: 'Anton', sans-serif; /* titles */
+            line-height: 1;
+            letter-spacing: 0.1em;
+        }
+        @media screen and (max-width: 1088px) and (min-width: 830px) {
+            .col-title {
+                padding: calc((150px - 2.75em)/2) 0 0 0;
+            }
+            .col-title h1 {
+                font-size: 2.75em;
+            }
+        }
+        @media screen and (max-width: 829px) and (min-width: 570px) {
+            .col-title {
+                padding: calc((150px - 5.5em)/2) 0 0 0;
+            }
+            .col-title h1 {
+                font-size: 2.75em;
+            }
+        }
+        @media screen and (max-width: 569px) and (min-width: 513px) {
+            .col-title {
+                padding: calc((150px - 4.5em)/2) 0 0 0;
+            }
+            .col-title h1 {
+                font-size: 2.25em;
+            }
+        }
+        @media screen and (max-width: 512px) {
+            .col-title {
+                padding: calc((150px - 6.75em)/2) 0 0 0;
+            }
+            .col-title h1 {
+                font-size: 2.25em;
+            }
+            .col-title-pic {
+                margin: 0;
+                padding: 0 .75em 0 .25em;
+            }
+        }
+        
+        
+        #name-submit, #name-input {
+            padding: 0.25em;
+            border: none;
+            border-radius: 5px;
+        }
+        #name-input {
+            margin-bottom: 1em;
+        }
+        #name-submit {
+            background-color: rgba(252, 176, 64, 1);  /* yellow */
+        }
+        .col-start {
+            padding-top: 3em;
+            text-align: center;
+        }
+        .col-start span {
+            font-family: 'Anton', sans-serif; /* titles */
+            color: rgba(252, 176, 64, 1);  /* yellow */
+        }
+        .row-message {
+            display: none;
+            margin-top: 2em;
+        }
+        .col-message span {
+            font-family: 'Anton', sans-serif; /* titles */
+            color: rgba(252, 176, 64, 1);  /* yellow */
+        }
+        
+        .container-play {
+            padding-top: 3em;
+        }
+        .row-play-choice {
+            display: none;
+        }
+        .col-play-pic {
+            text-align: center;
+        }
+        .row-play-choice span {
+            color: rgba(252, 176, 64, 1);  /* yellow */
+            font-family: 'Anton', sans-serif; /* titles */
+        }
+        @media screen and (max-width: 699px) {
+            .col-play-pic {
+                width: calc(33%);
+            }
+            .col-play-pic img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        @media screen and (max-width: 665px) {
+            .row-play-choice span {
+                font-size: 1.25em;
+            }
+        }
+        .row-play-battle {
+            width: 100%;
+            margin: 0;
+        }
+        .col-my-play, .col-opponent-play {
+            text-align: center;
+        
+        }
+        .battle-img {
+            height: auto;
+            width: 100%;
+            max-width: 400px;
+        }
+        .winning-pic .battle-img {
+            width: 50%;
+            height: auto;
+            max-width: 400px;
+            margin-top: .75em;
+        }
+        
+        .pic-my-play, .pic-opponent-play, .winning-pic {
+            text-align: center;
+        }
+        .my-move-caption, .opponent-move-caption, .outcome-message, .col-reckoning {
+            text-align: center;
+        }
+        .my-move-caption span, .opponent-move-caption span, .outcome-message span {
+            color: rgba(252, 176, 64, 1);  /* yellow */
+            font-family: 'Anton', sans-serif; /* titles */
+        }
+        .row-score {
+            padding: 1em 0;
+        }
+        .col-score {
+            text-align: center;
+        }
+        .col-score span {
+            color: rgba(252, 176, 64, 1);  /* yellow */
+            font-size: 1em;
+            font-family: 'Anton', sans-serif; /* titles */
+            text-align: center;
+        }

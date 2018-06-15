@@ -1,21 +1,6 @@
 
-/* font-family: 'Anton', sans-serif; /* titles */
-/* font-family: 'Roboto Mono', monospace; /* text */ 
-
-/* rgba(132, 11, 42, 1); /* egglant */
-/* rgba(210, 18, 67, 1); /* pink */
-/* rgba(252, 176, 64, 1);  /* yellow */
-/* rgba(239, 65, 54, 1); /* red */
-/* rgba(245, 124, 116, 1); /* salmon */
-
-/* text-shadow: 
-		-4px -4px 0 rgba(0, 0, 0, 1),
-		 4px -4px 0 rgba(0, 0, 0, 1),
-		-4px  4px 0 rgba(0, 0, 0, 1),
-		 4px  4px 0 rgba(0, 0, 0, 1); */
-
          body {
-            background-color: rgba(210, 18, 67, 1); /* pink */
+            background-color: royalblue; /* pink */
             font-family: 'Anton', sans-serif; /* titles */
             font-size: 2em;
         }
@@ -23,7 +8,7 @@
             font-size: 2em;
         }
         .bkg {
-            background-image: url('../img/star.png');
+            /* background-image: url('/'); */
             background-position: center;
             background-size: cover;
             width: 100vw;
